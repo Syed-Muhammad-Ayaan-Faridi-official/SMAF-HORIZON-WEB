@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../../assets/images/Official-Logo.png'
+import logo from '../../assets/images/Official-Logo.webp'
 
 
 const LeftText = () => {
