@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
-import logo from '../../assets/images/Official-Logo.png'
+import logo from '../../assets/images/Official-Logo.webp'
 
 const navLinkClass = ({ isActive }) =>
     `text-lg 2xl:text-2xl transition-colors ${isActive ? 'text-[#d4af37] font-semibold' : 'text-gray-300 hover:text-[#d4af37]'

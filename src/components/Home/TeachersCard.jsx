@@ -17,7 +17,7 @@ const TeachersCard = () => {
           <div 
           key={index} 
           className='relative min-w-75 max-w-80 max-sm:w-70 h-110 rounded-3xl object-cover bg-emerald-900'>
-            <img src={teacher.image} alt="" className='object-top h-full w-full rounded-2xl' />
+            <img loading='lazy' decoding='async' src={teacher.image} alt={teacher.name} className='object-top h-full w-full rounded-2xl' />
             <div className='w-full h-full absolute bottom-0 left-0 rounded-2xl z-10 bg-linear-to-t from-[#000000]/70 via-white/10 to-transparent flex flex-col justify-end px-2 py-2'>
               <h1 className='text-2xl text-[#ffa800] font-bold'>{teacher.name}</h1>
               <h1 className='text-sm text-[#ffa800] font-semibold'>{teacher.subject}</h1>
