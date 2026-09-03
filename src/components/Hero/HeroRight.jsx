@@ -1,8 +1,8 @@
 import React from 'react'
-import HBoy1 from '../../assets/images/HeroBoy1.png'
-import HBoy2 from '../../assets/images/HeroBoy2.png'
-import HGirl1 from '../../assets/images/HeroGirl1.png'
-import HGirl2 from '../../assets/images/HeroGirl2.png'
+import HBoy1 from '../../assets/images/HeroBoy1.jpg'
+import HBoy2 from '../../assets/images/HeroBoy2.jpg'
+import HGirl1 from '../../assets/images/HeroGirl1.jpg'
+import HGirl2 from '../../assets/images/HeroGirl2.jpg'
 import RatingHeroCard from './RatingHeroCard';
 
 const HeroRight = () => {
