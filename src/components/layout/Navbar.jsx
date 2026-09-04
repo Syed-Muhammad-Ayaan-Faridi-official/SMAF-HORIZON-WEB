@@ -59,9 +59,15 @@ const Navbar = () => {
                 <div className='bg-[#0E1117]/90 backdrop-blur-2xl rounded-2xl border border-gray-800 shadow-md shadow-[#152331] flex flex-col items-center gap-4 py-5'>
                     <NavLink to="/" end className={navLinkClass} onClick={() => setIsOpen(false)}>Home</NavLink>
                     <NavLink to="/faculty" className={navLinkClass} onClick={() => setIsOpen(false)}>Faculty</NavLink>
-                    <a className='text-gray-300 text-lg hover:text-blue-300' href="#Process" onClick={() => setIsOpen(false)}>Process</a>
-                    <a className='text-gray-300 text-lg hover:text-blue-300' href="#faqs" onClick={() => setIsOpen(false)}>FAQs</a>
-                    <button className='text-gray-900 border bg-linear-to-r from-[#FFF3B0] via-[#D4AF37] to-[#8C6A00] border-[#D4AF37]/60 px-4 py-2 rounded-md font-semibold cursor-pointer transition-all duration-300 ease-in hover:scale-105'>
+                    <NavLink to={"/#why-section"} className='text-lg 2xl:text-2xl transition-colors text-gray-300 hover:text-[#d4af37]'>Why</NavLink>
+                    <NavLink to={"/#Process"} className='text-lg 2xl:text-2xl transition-colors text-gray-300 hover:text-[#d4af37]'>Process</NavLink>
+                    <NavLink to={"/contact-us"} className='text-lg 2xl:text-2xl transition-colors text-gray-300 hover:text-[#d4af37]'>Contact</NavLink>
+                    <NavLink to={"/#faqs"} className='text-lg 2xl:text-2xl transition-colors text-gray-300 hover:text-[#d4af37]'>FAQs</NavLink>
+                    <button
+                        onClick={() => {
+                            window.location.href = "https://wa.me/923332622283";
+                        }}
+                        className='text-gray-900 border bg-linear-to-r from-[#FFF3B0] via-[#D4AF37] to-[#8C6A00] border-[#D4AF37]/60 px-4 py-2 rounded-md font-semibold cursor-pointer transition-all duration-300 ease-in hover:scale-105'>
                         Chat With Us
                     </button>
                 </div>
