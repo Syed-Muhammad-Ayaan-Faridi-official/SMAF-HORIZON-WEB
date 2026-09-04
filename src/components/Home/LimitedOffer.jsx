@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { ArrowRight } from 'lucide-react'
 import LimitedTime from '../../assets/images/LimitedTime.jpg'
 import CounterCards from '../Cards/CounterCards'
+import { NavLink } from 'react-router-dom'
 const LimitedOffer = () => {
   const target = new Date("2026-09-10T23:59:59").getTime();
   const calculateCountDown = () => {
@@ -16,10 +17,10 @@ const LimitedOffer = () => {
       }
     }
     return {
-      days: Math.floor(diff / (1000 * 60 * 60 * 24)).toString().padStart(2,"0"),
-      hours: Math.floor((diff / (1000 * 60 * 60))%24).toString().padStart(2,"0"),
-      minutes: Math.floor((diff / (1000 * 60 ))%60).toString().padStart(2,"0"),
-      seconds:  Math.floor((diff / (1000))%60).toString().padStart(2,"0")
+      days: Math.floor(diff / (1000 * 60 * 60 * 24)).toString().padStart(2, "0"),
+      hours: Math.floor((diff / (1000 * 60 * 60)) % 24).toString().padStart(2, "0"),
+      minutes: Math.floor((diff / (1000 * 60)) % 60).toString().padStart(2, "0"),
+      seconds: Math.floor((diff / (1000)) % 60).toString().padStart(2, "0")
     }
 
   }
@@ -29,9 +30,9 @@ const LimitedOffer = () => {
       settimeLeft(calculateCountDown());
     }, 1000);
 
-    return ()=> clearInterval(timer);
+    return () => clearInterval(timer);
   }, [])
-  
+
 
 
   return (
@@ -49,7 +50,9 @@ const LimitedOffer = () => {
             <CounterCards value={timeLeft.minutes} label={'Minutes'} />
             <CounterCards value={timeLeft.seconds} label={'Seconds'} />
           </div>
-          <button className='w-fit 2xl:text-xl text-[#010613] border border-white/12 bg-linear-to-l from-[#E6C875] to-[#D4AF37] px-4 py-3 rounded-md font-bold cursor-pointer hover:scale-95 flex items-center gap-1 transition duration-300 shadow-md shadow-yellow-800'>Grab Yours Now <ArrowRight size={18} strokeWidth={3} /></button>
+          <NavLink to={"/faculty"}>
+            <button className='w-fit 2xl:text-xl text-[#010613] border border-white/12 bg-linear-to-l from-[#E6C875] to-[#D4AF37] px-4 py-3 rounded-md font-bold cursor-pointer hover:scale-95 flex items-center gap-1 transition duration-300 shadow-md shadow-yellow-800'>Grab Yours Now <ArrowRight size={18} strokeWidth={3} /></button>
+          </NavLink>
         </div>
       </div>
     </div>
