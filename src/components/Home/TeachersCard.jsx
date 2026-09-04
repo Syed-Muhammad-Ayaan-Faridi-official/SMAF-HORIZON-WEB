@@ -14,6 +14,7 @@ const TeachersCard = () => {
       </div>
       <div className='no-scrollbar flex flex-row overflow-auto gap-3'>
         {teachers.map((teacher,index)=>(
+          <NavLink to={"/faculty"}>
           <div 
           key={index} 
           className='relative min-w-75 max-w-80 max-sm:w-70 h-110 rounded-3xl object-cover bg-emerald-900'>
@@ -23,6 +24,7 @@ const TeachersCard = () => {
               <h1 className='text-sm text-[#ffa800] font-semibold'>{teacher.subject}</h1>
             </div>
           </div>
+          </NavLink>
         ))}
       </div>
       <div className='w-full flex flex-col gap-3'>
