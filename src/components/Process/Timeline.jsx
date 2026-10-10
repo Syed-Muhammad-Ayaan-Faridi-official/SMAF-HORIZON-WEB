@@ -7,7 +7,7 @@ const Timeline = () => {
             <div className='absolute z-0 h-270 top-5 bottom-10 left-6 border-l border-l-emerald-400'>
             </div>
             <div className='absolute w-full flex top-10 left-0 z-10 gap-2'>
-                <div className='w-12 h-12 bg-linear-to-br from-[#000000] via-[#011a33] to-[#152331] border border-amber-300/50 shadow-md shadow-amber-400 rounded-full flex items-center justify-center font-bold text-[#FBCE40]' ><RiBankCardFill /></div>
+                <div className='w-12 h-12 bg-linear-to-br from-[#000000] via-[#011a33] to-[#46a2ff] border border-amber-300/50 shadow-md shadow-amber-400 rounded-full flex items-center justify-center font-bold text-[#FBCE40]' ><RiBankCardFill /></div>
                 <div className='bg-linear-to-br from-[#000000]/50 via-[#011a33]/50 to-[#152331] w-[75%] md:w-[90%] rounded-2xl rounded-tl-none h-fit mt-5 max-sm:px-2 py-3 px-10 flex flex-col sm:gap-1.5 border border-white/10 shadow-lg shadow-gray-950 hover:border-[#d4af37]/85 transition-all duration-300 ease-in-out'>
                     <h3 className='text-md text-[#ffa800] font-semibold'>Step 01</h3>
                     <h1 className='text-lg sm:text-2xl font-bold text-gray-200'>Enrollment</h1>
